@@ -1,12 +1,12 @@
 name:                naver-unse
 version:             0.1.0.0
-synopsis:            Initial project template from stack
-description:         Please see README.md
-homepage:            http://github.com/githubuser/naver-unse#readme
+synopsis:            Haskell wrapper of unofficial Naver daily fortune telling API
+description:         See README.md
+homepage:            http://github.com/kuc2477/naver-unse#readme
 license:             BSD3
 license-file:        LICENSE
-author:              Author name here
-maintainer:          example@example.com
+author:              Ha Junsoo
+maintainer:          kuc2477@gmail.com
 copyright:           2010 Author Here
 category:            Web
 build-type:          Simple
@@ -15,8 +15,10 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
-  exposed-modules:     Lib
+  exposed-modules:     Web.Naver.Fortune
   build-depends:       base >= 4.7 && < 5
+                     , text
+                     , wreq
   default-language:    Haskell2010
 
 executable naver-unse-exe
@@ -38,4 +40,4 @@ test-suite naver-unse-test
 
 source-repository head
   type:     git
-  location: https://github.com/githubuser/naver-unse
+  location: https://github.com/kuc2477/naver-unse
